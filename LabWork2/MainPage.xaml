@@ -1,0 +1,107 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LabWork2.Views.MainPage"
+             Title="Робота з XML">
+
+    <!-- Основний контейнер -->
+    <VerticalStackLayout Padding="20" Spacing="20">
+
+        <!-- Панель дій -->
+        <Grid ColumnSpacing="10" Margin="10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <!-- Вибір парсера -->
+            <Picker x:Name="ParserPicker" Title="Оберіть тип парсера">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>SAX</x:String>
+                        <x:String>DOM</x:String>
+                        <x:String>LINQ to XML</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+
+            <!-- Кнопки -->
+            <Button Grid.Column="1"
+                    Text="Пошук"
+                    BackgroundColor="SteelBlue"
+                    TextColor="White"
+                    CornerRadius="5"
+                    Clicked="OnFindClicked" />
+
+            <Button Grid.Column="2"
+                    Text="Очистити"
+                    BackgroundColor="Orange"
+                    TextColor="White"
+                    CornerRadius="5"
+                    Clicked="OnClearClicked" />
+
+            <Button Grid.Column="3"
+                    x:Name="AddFileButton"
+                    Text="Додати файл"
+                    BackgroundColor="Red"
+                    TextColor="White"
+                    CornerRadius="5"
+                    Clicked="OnAddFileClicked" />
+        </Grid>
+
+        <!-- Фільтри для пошуку -->
+        <Grid RowSpacing="10" ColumnSpacing="10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="40" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="40" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <!-- Ряди -->
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+            <!-- Рядок 1 -->
+            <CheckBox x:Name="NameCheckBox" Grid.Row="0" Grid.Column="0" />
+            <Entry x:Name="NameEntry" Grid.Row="0" Grid.Column="1" Placeholder="ПІБ" />
+
+            <CheckBox x:Name="FacultyCheckBox" Grid.Row="0" Grid.Column="2" />
+            <Entry x:Name="FacultyEntry" Grid.Row="0" Grid.Column="3" Placeholder="Факультет" />
+
+            <!-- Рядок 2 -->
+            <CheckBox x:Name="CourseCheckBox" Grid.Row="1" Grid.Column="0" />
+            <Entry x:Name="CourseEntry" Grid.Row="1" Grid.Column="1" Placeholder="Курс" />
+
+            <CheckBox x:Name="RoomCheckBox" Grid.Row="1" Grid.Column="2" />
+            <Entry x:Name="RoomEntry" Grid.Row="1" Grid.Column="3" Placeholder="Номер кімнати" />
+
+        </Grid>
+        <Grid RowSpacing="10" ColumnSpacing="10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="35" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="35" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <!-- Рядок 3: Дата заселення та виселення -->
+            <CheckBox x:Name="CheckInCheckBox"  Grid.Column="0" />
+            <Label  Grid.Column="1" Text="Дата заселення"
+       VerticalTextAlignment="Center" HorizontalTextAlignment="Start" />
+            <DatePicker x:Name="CheckInEntry"  Grid.Column="2"
+            HorizontalOptions="Start" WidthRequest="180" />
+
+            <CheckBox x:Name="CheckOutCheckBox"  Grid.Column="3" />
+            <Label  Grid.Column="4" Text="Дата виселення"
+       VerticalTextAlignment="Center" HorizontalTextAlignment="Start" />
+            <DatePicker x:Name="CheckOutEntry"  Grid.Column="5"
+            HorizontalOptions="Start" WidthRequest="180" />
+
+        </Grid>
+    </VerticalStackLayout>
+</ContentPage>

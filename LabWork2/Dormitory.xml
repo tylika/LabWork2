@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Dormitory>
+	<Person>
+		<Name>
+			<FirstName>Олексій</FirstName>
+			<LastName>Семенов</LastName>
+		</Name>
+		<Faculty>Факультет інформаційних технологій</Faculty>
+		<Course>4</Course>
+		<Room>201</Room>
+		<CheckInDate>01.09.2023</CheckInDate>
+		<CheckOutDate>01.09.2024</CheckOutDate>
+	</Person>
+	<Person>
+		<Name>
+			<FirstName>Марія</FirstName>
+			<LastName>Григоренко</LastName>
+		</Name>
+		<Faculty>Факультет кібернетики</Faculty>
+		<Course>2</Course>
+		<Room>202</Room>
+		<CheckInDate>15.09.2023</CheckInDate>
+		<CheckOutDate>15.09.2024</CheckOutDate>
+	</Person>
+	<Person>
+		<Name>
+			<FirstName>Дмитро</FirstName>
+			<LastName>Коваленко</LastName>
+		</Name>
+		<Faculty>Факультет комп'ютерних наук</Faculty>
+		<Course>3</Course>
+		<Room>203</Room>
+		<CheckInDate>01.08.2023</CheckInDate>
+		<CheckOutDate>01.08.2024</CheckOutDate>
+	</Person>
+	<Person>
+		<Name>
+			<FirstName>Олена</FirstName>
+			<LastName>Іванчук</LastName>
+		</Name>
+		<Faculty>Факультет соціальних наук</Faculty>
+		<Course>1</Course>
+		<Room>204</Room>
+		<CheckInDate>10.09.2023</CheckInDate>
+		<CheckOutDate>10.09.2024</CheckOutDate>
+	</Person>
+	<Person>
+		<Name>
+			<FirstName>Анна</FirstName>
+			<LastName>Мельник</LastName>
+		</Name>
+		<Faculty>Факультет економіки</Faculty>
+		<Course>3</Course>
+		<Room>205</Room>
+		<CheckInDate>20.09.2023</CheckInDate>
+		<CheckOutDate>20.09.2024</CheckOutDate>
+	</Person>
+	<Person>
+		<Name>
+			<FirstName>Євген</FirstName>
+			<LastName>Литвин</LastName>
+		</Name>
+		<Faculty>Факультет міжнародних відносин</Faculty>
+		<Course>2</Course>
+		<Room>206</Room>
+		<CheckInDate>05.09.2023</CheckInDate>
+		<CheckOutDate>05.09.2024</CheckOutDate>
+	</Person>
+	<Person>
+		<Name>
+			<FirstName>Світлана</FirstName>
+			<LastName>Бондар</LastName>
+		</Name>
+		<Faculty>Факультет права</Faculty>
+		<Course>4</Course>
+		<Room>207</Room>
+		<CheckInDate>12.09.2023</CheckInDate>
+		<CheckOutDate>12.09.2024</CheckOutDate>
+	</Person>
+	<Person>
+		<Name>
+			<FirstName>Ігор</FirstName>
+			<LastName>Шевченко</LastName>
+		</Name>
+		<Faculty>Факультет філології</Faculty>
+		<Course>1</Course>
+		<Room>208</Room>
+		<CheckInDate>01.09.2023</CheckInDate>
+		<CheckOutDate>01.09.2024</CheckOutDate>
+	</Person>
+	<Person>
+		<Name>
+			<FirstName>Катерина</FirstName>
+			<LastName>Романенко</LastName>
+		</Name>
+		<Faculty>Факультет архітектури</Faculty>
+		<Course>2</Course>
+		<Room>209</Room>
+		<CheckInDate>25.09.2023</CheckInDate>
+		<CheckOutDate>25.09.2024</CheckOutDate>
+	</Person>
+</Dormitory>
